@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register Donor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🩸 BloodConnect</h1>
+    <p>Connecting Blood Donors with Patients</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="search.html">Search Donor</a>
+</nav>
+
+<div class="container">
+
+    <h2>Donor Registration</h2>
+
+    <p>Become a lifesaver by registering as a voluntary blood donor.</p>
+
+    <form action="http://localhost:8080/register" method="POST">
+
+        <label>Full Name</label>
+        <input
+            type="text"
+            name="fullName"
+            placeholder="Enter Full Name"
+            required>
+
+        <label>Age</label>
+        <input
+            type="number"
+            name="age"
+            placeholder="Enter Age"
+            required>
+
+        <label>Blood Group</label>
+
+        <select name="bloodGroup">
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+
+        <label>Phone Number</label>
+
+        <input
+            type="text"
+            name="phone"
+            placeholder="Enter Phone Number"
+            required>
+
+        <label>Email</label>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter Email">
+
+        <label>City</label>
+
+        <input
+            type="text"
+            name="city"
+            placeholder="Enter City"
+            required>
+
+        <label>Last Donation Date</label>
+
+        <input
+            type="date"
+            name="lastDonation">
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+</div>
+
+<footer>
+    <p>© 2026 BloodConnect | Developed using Java, JDBC, MySQL, HTML & CSS</p>
+</footer>
+
+</body>
+
+</html>
